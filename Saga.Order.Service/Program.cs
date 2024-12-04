@@ -1,4 +1,6 @@
 
+using MassTransit;
+
 namespace Saga.Order.Service
 {
     public class Program
@@ -14,6 +16,15 @@ namespace Saga.Order.Service
             //Will use only swagger UI for visualization
             builder.Services.AddOpenApi();
 
+
+            builder.Services.AddMassTransit(x =>
+            {
+                x.UsingRabbitMq((context, cfg) =>
+                {
+                    cfg.Host(builder.Configuration.GetConnectionString("RabbitMQ"));
+                    cfg.ConfigureEndpoints(context);
+                });
+            });
 
             var app = builder.Build();
 

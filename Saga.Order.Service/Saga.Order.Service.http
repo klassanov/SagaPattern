@@ -1,6 +1,16 @@
-@Saga.Order.Service_HostAddress = http://localhost:5158
+@Saga.Order.Service_HostAddress = https://localhost:7242
+@ssl.verify = false
 
 GET {{Saga.Order.Service_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+POST {{Saga.Order.Service_HostAddress}}/orders
+Content-Type: application/json
+{
+    "total": 90.00,
+    "email": "test@test.com"
+}
 
 ###

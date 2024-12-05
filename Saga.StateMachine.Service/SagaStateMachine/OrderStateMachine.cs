@@ -1,7 +1,7 @@
 ﻿using MassTransit;
 using Saga.Contracts;
 
-namespace Saga.Implementation
+namespace Saga.StateMachine.Service.SagaStateMachine
 {
     public class OrderStateMachine : MassTransitStateMachine<OrderState>
     {
@@ -54,12 +54,21 @@ namespace Saga.Implementation
 
             During(ProcessingPayment,
                 When(PaymentProcessed)
-                    .TransitionTo(Completed)
-                    .Finalize(),
+                    .Then(context =>
+                    {
+                        context.Saga.PaymentIntentId = context.Message.PaymentIntentId;
+                    })
+                    .TransitionTo(Completed),
+                    //.Finalize(),
 
                 When(PaymentFailed)
+                     .Then(context =>
+                    {
+                        context.Saga.PaymentIntentId = context.Message.PaymentIntentId;
+                        context.Saga.FailureReason = context.Message.Reason;
+                    })
                     .TransitionTo(Failed)
-                    .Finalize()
+                    //.Finalize()
             );
 
             //SetCompletedWhenFinalized();

@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace Saga.Implementation
+namespace Saga.StateMachine.Service.SagaStateMachine
 {
     //Represents the processing of 1 order
     public class OrderState : SagaStateMachineInstance
@@ -21,5 +21,7 @@ namespace Saga.Implementation
         public string? CustomerEmail { get; set; }
 
         public string? PaymentIntentId { get; set; }
+
+        public string? FailureReason { get; set; }
     }
 }

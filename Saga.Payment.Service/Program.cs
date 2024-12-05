@@ -1,7 +1,7 @@
 
 using MassTransit;
 
-namespace Sags.Payment.Service
+namespace Saga.Payment.Service
 {
     public class Program
     {

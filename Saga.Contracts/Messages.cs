@@ -7,21 +7,22 @@
         public string? Email { get; init; }
     }
 
-    public record OrderConfirmed
+    //public record OrderConfirmed
+    //{
+    //    public Guid OrderId { get; init; }
+    //}
+
+    public record ProcessPayment
     {
         public Guid OrderId { get; init; }
+        public decimal Amount { get; init; }
     }
 
     public record PaymentFailed
     {
         public Guid OrderId { get; init; }
         public string? Reason { get; set; }
-    }
-
-    public record ProcessPayment
-    {
-        public Guid OrderId { get; init; }
-        public decimal Amount { get; init; }
+        public string? PaymentIntentId { get; init; }
     }
 
     public record PaymentProcessed

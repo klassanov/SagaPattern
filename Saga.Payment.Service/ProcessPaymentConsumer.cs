@@ -1,7 +1,7 @@
 ﻿using MassTransit;
 using Saga.Contracts;
 
-namespace Sags.Payment.Service
+namespace Saga.Payment.Service
 {
     public class ProcessPaymentConsumer : IConsumer<ProcessPayment>
     {
@@ -12,7 +12,7 @@ namespace Sags.Payment.Service
         {
             this.logger = logger;
             this.publishEndpoint = publishEndpoint;
-        }       
+        }
 
         public async Task Consume(ConsumeContext<ProcessPayment> context)
         {
@@ -38,7 +38,7 @@ namespace Sags.Payment.Service
                 await publishEndpoint.Publish(new PaymentFailed
                 {
                     OrderId = context.Message.OrderId,
-                    Reason = "Payment Failed"
+                    Reason = "Payment Failed for some random reason"
                 });
             }
 

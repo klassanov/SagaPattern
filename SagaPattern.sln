@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Implementation", "Saga.Implementation\Saga.Implementation.csproj", "{8FE6B63D-41F4-46C3-986C-3AA9AB1840EA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Contracts", "Saga.Contracts\Saga.Contracts.csproj", "{7BFC06DB-EB3B-4A94-BE35-59D586E03D62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Payment.Service", "Saga.Payment.Service\Saga.Payment.Service.csproj", "{907C756B-BDBD-4AF8-9418-1D0CEE5CACD7}"
@@ -16,16 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Order.Service", "Saga.Order.Service\Saga.Order.Service.csproj", "{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.StateMachine.Service", "Saga.StateMachine.Service\Saga.StateMachine.Service.csproj", "{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8FE6B63D-41F4-46C3-986C-3AA9AB1840EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FE6B63D-41F4-46C3-986C-3AA9AB1840EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FE6B63D-41F4-46C3-986C-3AA9AB1840EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FE6B63D-41F4-46C3-986C-3AA9AB1840EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BFC06DB-EB3B-4A94-BE35-59D586E03D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BFC06DB-EB3B-4A94-BE35-59D586E03D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BFC06DB-EB3B-4A94-BE35-59D586E03D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,6 +34,10 @@ Global
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

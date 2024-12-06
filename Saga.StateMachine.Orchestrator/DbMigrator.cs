@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Saga.StateMachine.Service.SagaDatabaseContext;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Saga.StateMachine.Orchestrator.SagaDatabaseContext;
 
-namespace Saga.StateMachine.Service
+namespace Saga.StateMachine.Orchestrator
 {
     public static class DbMigrator
     {

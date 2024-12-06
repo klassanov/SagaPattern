@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Order.Service", "Saga.Order.Service\Saga.Order.Service.csproj", "{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.StateMachine.Service", "Saga.StateMachine.Service\Saga.StateMachine.Service.csproj", "{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.StateMachine.Orchestrator", "Saga.StateMachine.Orchestrator\Saga.StateMachine.Orchestrator.csproj", "{7271E83D-4B46-4C4D-9CBE-818916261BE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9265DA-7A07-4F5B-AAA9-E513F8D79DD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9412F7F-CF1C-4D46-AFD3-43717A6C1489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7271E83D-4B46-4C4D-9CBE-818916261BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7271E83D-4B46-4C4D-9CBE-818916261BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7271E83D-4B46-4C4D-9CBE-818916261BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7271E83D-4B46-4C4D-9CBE-818916261BE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

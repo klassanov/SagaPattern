@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace Saga.StateMachine.Service.SagaStateMachine
+namespace Saga.StateMachine.Orchestrator.SagaStateMachine
 {
     //Represents the processing of 1 order
     public class OrderState : SagaStateMachineInstance

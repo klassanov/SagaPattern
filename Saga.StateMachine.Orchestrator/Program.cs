@@ -1,16 +1,18 @@
-using MassTransit;
+﻿using MassTransit;
 using Microsoft.EntityFrameworkCore;
-using Saga.StateMachine.Service.SagaDatabaseContext;
-using Saga.StateMachine.Service.SagaStateMachine;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Saga.StateMachine.Orchestrator.SagaDatabaseContext;
+using Saga.StateMachine.Orchestrator.SagaStateMachine;
 
-namespace Saga.StateMachine.Service
+namespace Saga.StateMachine.Orchestrator
 {
-    public class Program
+    internal class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             var builder = Host.CreateApplicationBuilder(args);
-            builder.Services.AddHostedService<Worker>();
 
             builder.Services.AddDbContext<OrderSagaDbContext>(options =>
             {

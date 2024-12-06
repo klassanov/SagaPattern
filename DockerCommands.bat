@@ -2,7 +2,7 @@
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
 
 # postgres
-docker run --name postgres-container -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e -p 5432:5432 postgres
+docker run --name postgres-container -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -p 5432:5432 postgres
 
 # postgres management
 docker run --name pgadmin-container -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 8088:80 dpage/pgadmin4

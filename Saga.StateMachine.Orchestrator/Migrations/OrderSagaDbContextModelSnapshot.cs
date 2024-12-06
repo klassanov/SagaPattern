@@ -2,21 +2,18 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Saga.StateMachine.Service.SagaDatabaseContext;
+using Saga.StateMachine.Orchestrator.SagaDatabaseContext;
 
 #nullable disable
 
-namespace Saga.StateMachine.Service.Migrations
+namespace Saga.StateMachine.Orchestrator.Migrations
 {
     [DbContext(typeof(OrderSagaDbContext))]
-    [Migration("20241205223946_ColumnFailureReasonAdded")]
-    partial class ColumnFailureReasonAdded
+    partial class OrderSagaDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,10 +22,11 @@ namespace Saga.StateMachine.Service.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Saga.StateMachine.Service.SagaStateMachine.OrderState", b =>
+            modelBuilder.Entity("Saga.StateMachine.Orchestrator.SagaStateMachine.OrderState", b =>
                 {
                     b.Property<Guid>("CorrelationId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasColumnName("OrderId");
 
                     b.Property<string>("CurrentState")
                         .HasColumnType("text");

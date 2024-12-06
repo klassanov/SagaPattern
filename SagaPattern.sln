@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Contracts", "Saga.Contracts\Saga.Contracts.csproj", "{7BFC06DB-EB3B-4A94-BE35-59D586E03D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Payment.Service", "Saga.Payment.Service\Saga.Payment.Service.csproj", "{907C756B-BDBD-4AF8-9418-1D0CEE5CACD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Payment.Service.Old", "Saga.Payment.Service.Old\Saga.Payment.Service.Old.csproj", "{907C756B-BDBD-4AF8-9418-1D0CEE5CACD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{FA22D6CF-C3A4-4489-A09A-C93D985FD3BF}"
 	ProjectSection(SolutionItems) = preProject

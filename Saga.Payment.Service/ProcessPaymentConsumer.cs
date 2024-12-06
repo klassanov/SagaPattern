@@ -1,7 +1,8 @@
 ﻿using MassTransit;
+using Microsoft.Extensions.Logging;
 using Saga.Contracts;
 
-namespace Saga.Payment.Service.Old
+namespace Saga.Payment.Service
 {
     public class ProcessPaymentConsumer : IConsumer<ProcessPayment>
     {
